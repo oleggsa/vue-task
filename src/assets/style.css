@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.search__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search__filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search__filters-item {
+    font-size: 20px;
+}
+
+.search__input input {
+    width: 300px;
+    height: 30px;
+}
+
+.card__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: calc(25% - 10px);
+    padding: 12px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 5px;
+    background-color: #9fffefec;
+}
+
+.card:nth-child(4n){
+    margin-right: 0;
+}
+
+.card__image {
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card__image img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card__tags {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    padding: 2px 3px;
+    background-color: rgb(255, 125, 143);
+    border-radius:5px;
+    border: 1px solid black;
+}
+
+.card__likes-comments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__likes:before {
+    content: '';
+    background: url('https://png.pngtree.com/element_our/20200702/ourmid/pngtree-thumbs-up-comic-thumb-element-image_2283169.jpg');
+    height: 10px;
+    width: 10px;
+}
